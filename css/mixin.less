@@ -1,0 +1,14 @@
+.size (@a, @b) {
+  width: @a;
+  height: @b;
+}
+.bg (@url) {
+  background: url(@url) no-repeat;
+  background-size: 100% 100%;
+}
+.pl (@w) {
+  width: @w;
+  overflow:hidden;
+  text-overflow:ellipsis; 
+  white-space: nowrap;/*加宽度width属来兼容部分浏览*/
+}

@@ -1,0 +1,426 @@
+/**
+* 兄dei，对不住了。你们老板不让 .less 文件传过来。将就着改改吧。
+*/
+body .banner {
+  width: 100%;
+}
+body .btns-box {
+  height: 2.18rem;
+}
+body .btns-box .btn {
+  width: 2rem;
+  height: 0.54rem;
+  line-height: .54rem;
+  background: url("../img/icon_menu_bottun.png") no-repeat;
+  background-size: 100% 100%;
+  font-family: PingFangSC-Regular;
+  color: #fefffe;
+  font-size: .26rem;
+  margin-right: .45rem;
+  margin-top: .35rem;
+}
+body .btns-box .btn.mt40 {
+  margin-top: .4rem;
+}
+body .btns-box .btn:nth-child(3n+1) {
+  margin-left: .3rem;
+}
+body .btns-box .btn:nth-child(3n) {
+  margin-right: 0;
+}
+body .line {
+  background: #f3f3f3;
+  height: .2rem;
+  margin-bottom: .4rem;
+}
+body .search {
+  width: 6.7rem;
+  height: 0.8rem;
+  background: url("../img/icon_home_search_bg.png") no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto .4rem;
+  line-height: .8rem;
+}
+body .search .icon {
+  width: 0.35rem;
+  height: 0.35rem;
+  display: inline-block;
+  background: url("../img/icon_home_search_btn.png") no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+  margin: 0 .14rem 0 .3rem;
+}
+body .search .inp {
+  font-size: .24rem;
+  color: #a6a5a6;
+  background: rgba(0, 0, 0, 0);
+}
+body .opus {
+  padding-bottom: 1.3rem;
+}
+body .opus .opus-title {
+  color: #e80306;
+  font-size: .36rem;
+  margin: 0 auto .4rem;
+  font-weight: bold;
+}
+body .opus .opus-title span {
+  padding: 0 .2rem;
+  position: relative;
+}
+body .opus .opus-title span::before,
+body .opus .opus-title span::after {
+  content: "";
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  width: .5rem;
+  background: #e80306;
+}
+body .opus .opus-title span::before {
+  left: -0.5rem;
+}
+body .opus .opus-title span::after {
+  right: -0.5rem;
+}
+body .opus .opus-list {
+  overflow-x: hidden;
+}
+body .opus .opus-list .opus-item {
+  width: 3.75rem;
+  height: 6.6rem;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+}
+body .opus .opus-list .opus-item video {
+  object-fit: fill;
+}
+body .opus .opus-list .opus-item .cover {
+  width: 100%;
+  height: 100%;
+}
+body .opus .opus-list .opus-item:nth-child(2n+1) {
+  border-right: 1px solid transparent;
+}
+body .opus .opus-list .opus-item:nth-child(2n) {
+  border-left: 1px solid transparent;
+}
+body .opus .opus-list .opus-item .opus-desp {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: .2rem;
+  padding-bottom: 0;
+  box-sizing: border-box;
+}
+body .opus .opus-list .opus-item .opus-desp .opus-desp-title {
+  color: #fff;
+  font-size: .3rem;
+  margin-bottom: .1rem;
+  line-height: .4rem;
+}
+body .opus .opus-list .opus-item .opus-desp .opus-desp-plays {
+  font-size: .24rem;
+  color: #fefefe;
+  margin-bottom: .2rem;
+}
+body .opus .opus-list .opus-item .opus-desp .opus-desp-plays .icon {
+  display: inline-block;
+  width: 0.18rem;
+  height: 0.18rem;
+  background: url("../img/icon_home_video_p.png") no-repeat;
+  background-size: 100% 100%;
+}
+body .opus .opus-list .opus-item .opus-desp .thumbs {
+  font-size: .24rem;
+  color: #fefefe;
+}
+body .opus .opus-list .opus-item .close-video {
+  position: absolute;
+  top: .3rem;
+  right: .3rem;
+  color: #fff;
+}
+body .share-btns {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-bottom: .3rem;
+  z-index: 777;
+}
+body .share-btns .btn {
+  color: #fefefe;
+  font-size: .3rem;
+  width: 2.3rem;
+  height: 0.69rem;
+  border-radius: .35rem;
+}
+body .share-btns .btn.share {
+  background: url("../img/icon_home_orange.png") no-repeat;
+  background-size: 100% 100%;
+  margin-left: .7rem;
+  margin-right: 1.5rem;
+}
+body .share-btns .btn.register {
+  background: url("../img/icon_home_red.png") no-repeat;
+  background-size: 100% 100%;
+}
+.introduce .dialog-content {
+  padding: .4rem;
+}
+.introduce .dialog-content h1 {
+  padding-top: .4rem;
+  color: #333;
+  font-size: .3rem;
+  padding-bottom: .18rem;
+  line-height: .38rem;
+}
+.introduce .dialog-content p {
+  font-size: .24rem;
+  color: #999;
+  text-indent: 2em;
+  line-height: 1.7;
+  margin: .24rem auto;
+}
+.introduce .dialog-content img {
+  max-width: 100%;
+  margin: .14rem auto;
+  display: block;
+}
+.doc-article .dialog-mask {
+  bottom: .5rem;
+}
+.doc-article img {
+  max-width: 100%;
+  margin: .14rem auto;
+  display: block;
+}
+.doc-article section {
+  padding: .2rem;
+  padding-top: 0;
+  overflow: auto;
+}
+.doc-article p {
+  text-indent: 2em;
+  font-size: .24rem;
+  line-height: 1.7;
+  margin: .24rem auto;
+}
+.doc-article h4,
+.doc-article h1 {
+  color: #333;
+  font-size: .28rem;
+  margin: .14rem 0;
+  font-weight: 700;
+}
+.doc-article strong {
+  text-decoration: underline;
+}
+.mvp .dialog-content {
+  padding: 0 .23rem 2.08rem;
+}
+.mvp .nav {
+  margin-top: .5rem;
+  margin-left: 1.2rem;
+}
+.mvp .nav li {
+  width: 2rem;
+  height: 0.66rem;
+  color: #e80306;
+  font-size: .36rem;
+  line-height: .66rem;
+}
+.mvp .nav li:nth-child(2n+1) {
+  background: url("../img/table_line_left.png") no-repeat;
+  background-size: 100% 100%;
+}
+.mvp .nav li:nth-child(2n+1).active {
+  background: url("../img/table_red_left.png") no-repeat;
+  background-size: 100% 100%;
+}
+.mvp .nav li:nth-child(2n) {
+  background: url("../img/table_line_right.png") no-repeat;
+  background-size: 100% 100%;
+}
+.mvp .nav li:nth-child(2n).active {
+  background: url("../img/table_red_right.png") no-repeat;
+  background-size: 100% 100%;
+}
+.mvp .nav li.active {
+  color: #fefefe;
+}
+.mvp .ranking {
+  margin-top: .36rem;
+  color: #333;
+  overflow: scroll;
+}
+.mvp .ranking .thead {
+  font-size: .3rem;
+}
+.mvp .ranking .thead .tr {
+  line-height: .58rem;
+  border-bottom: 0.01rem solid #b1b1b1;
+  box-sizing: border-box;
+}
+.mvp .ranking .thead p {
+  display: inline-block;
+}
+.mvp .ranking .tbody table {
+  width: 100%;
+}
+.mvp .ranking .tbody tr {
+  line-height: .9rem;
+  border-bottom: .01rem solid #b1b1b1;
+  box-sizing: border-box;
+}
+.mvp .ranking .tbody tr img {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.mvp .ranking .tbody tr td:nth-child(3) {
+  line-height: .5rem;
+}
+.mvp .ranking td,
+.mvp .ranking p {
+  text-align: center;
+}
+.mvp .ranking td:nth-child(1),
+.mvp .ranking p:nth-child(1) {
+  width: 15%;
+}
+.mvp .ranking td:nth-child(2),
+.mvp .ranking p:nth-child(2) {
+  width: 15%;
+}
+.mvp .ranking td:nth-child(3),
+.mvp .ranking p:nth-child(3) {
+  width: 46%;
+}
+.mvp .ranking td:nth-child(3) span,
+.mvp .ranking p:nth-child(3) span {
+  width: 8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /*加宽度width属来兼容部分浏览*/
+  display: inline-block;
+}
+.mvp .ranking td:nth-child(4),
+.mvp .ranking p:nth-child(4) {
+  width: 20%;
+}
+.mvp .foot {
+  height: 2.08rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+.mvp .foot .my-score {
+  padding: .3rem 0 .14rem;
+  font-size: .3rem;
+  color: #333;
+}
+.mvp .foot .tips {
+  color: #b1b1b1;
+  font-size: .24rem;
+}
+.friends .dialog-content {
+  padding: 0 .23rem 2.08rem;
+}
+.friends .ranking {
+  margin-top: .36rem;
+  color: #333;
+  overflow: scroll;
+}
+.friends .ranking .thead {
+  font-size: .3rem;
+}
+.friends .ranking .thead .tr {
+  line-height: .58rem;
+  border-bottom: 0.01rem solid #b1b1b1;
+  box-sizing: border-box;
+}
+.friends .ranking .thead p {
+  display: inline-block;
+}
+.friends .ranking .tbody table {
+  width: 100%;
+}
+.friends .ranking .tbody tr {
+  line-height: .7rem;
+  border-bottom: .01rem solid #b1b1b1;
+  box-sizing: border-box;
+}
+.friends .ranking td,
+.friends .ranking p {
+  text-align: center;
+}
+.friends .ranking td:nth-child(1),
+.friends .ranking p:nth-child(1) {
+  width: 30%;
+}
+.friends .ranking td:nth-child(2),
+.friends .ranking p:nth-child(2) {
+  width: 36%;
+}
+.friends .ranking td:nth-child(2) span,
+.friends .ranking p:nth-child(2) span {
+  width: 8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /*加宽度width属来兼容部分浏览*/
+  display: inline-block;
+  vertical-align: middle;
+}
+.friends .ranking td:nth-child(3),
+.friends .ranking p:nth-child(3) {
+  width: 30%;
+}
+.friends .foot .tips {
+  margin-top: .1rem;
+}
+.modal {
+  height: 0;
+  overflow: hidden;
+}
+.model-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+@media screen and (min-width: 760px) {
+  .dialog {
+    width: 6.8rem;
+    height: 9.68rem;
+    margin-top: -4.84rem;
+  }
+  .dialog .dialog-content {
+    max-height: 7.68rem;
+  }
+  body .opus .opus-list {
+    width: 7.5rem;
+    margin: 0 auto;
+  }
+  body .share-btns {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+  }
+  body .share-btns .btn.share {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .btns-box {
+    width: 7.5rem;
+    margin: 0 auto;
+  }
+}

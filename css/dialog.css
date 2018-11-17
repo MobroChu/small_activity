@@ -1,0 +1,58 @@
+.hover-mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 988;
+}
+.dialog {
+  width: 6.8rem;
+  height: 11.68rem;
+  border-radius: 5px;
+  background: #ffffff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -3.4rem;
+  margin-top: -5.84rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 999;
+}
+.dialog .dialog-title {
+  height: 1rem;
+  background-color: #e80306;
+  color: #fefefe;
+  font-size: .36rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1rem;
+}
+.dialog .dialog-close {
+  background: url("../img/icon_popup_close.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-size: .3rem .3rem;
+  position: absolute;
+  right: .2rem;
+  top: .2rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  cursor: pointer;
+}
+.dialog .dialog-content {
+  padding: .2rem;
+  max-height: 9.68rem;
+  overflow-y: scroll;
+}
+.dialog .dialog-mask {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.5rem;
+  background: url("../img/icon_popup_mask.png") no-repeat;
+  background-size: 100% 100%;
+}

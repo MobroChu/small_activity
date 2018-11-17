@@ -1,0 +1,436 @@
+/**
+* 兄dei，对不住了。你们老板不让 .less 文件传过来。将就着改改吧。
+*/
+@import url("./mixin.less");
+
+body {
+  .banner {
+    width: 100%;
+  }
+  .btns-box {
+    height: 2.18rem;
+
+    .btn {
+      .size(2rem, .54rem);
+      line-height: .54rem;
+      .bg("../img/icon_menu_bottun.png");
+      font-family: PingFangSC-Regular;
+      color: #fefffe;
+      font-size: .26rem;
+      margin-right: .45rem;
+      margin-top: .35rem;
+      &.mt40 {
+        margin-top: .4rem;
+      }
+      &:nth-child(3n+1) {
+        margin-left: .3rem;
+      }
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  }
+  .line {
+    background: #f3f3f3;
+    height: .2rem;
+    margin-bottom: .4rem;
+  }
+  .search {
+    .size(6.7rem, .8rem);
+    .bg("../img/icon_home_search_bg.png");
+    margin: 0 auto .4rem;
+    line-height: .8rem;
+    .icon {
+      .size(.35rem, .35rem);
+      display: inline-block;
+      .bg("../img/icon_home_search_btn.png");
+      vertical-align: middle;
+      margin: 0 .14rem 0 .3rem;
+    }
+    .inp {
+      font-size: .24rem;
+      color: #a6a5a6;
+      background: rgba(0, 0, 0, 0);
+    }
+  }
+
+  .opus {
+    padding-bottom: 1.3rem;
+    .opus-title {
+      color: #e80306;
+      font-size: .36rem;
+      margin: 0 auto .4rem;
+      font-weight: bold;
+      span {
+        padding: 0 .2rem;
+        position: relative;
+        &::before,
+        &::after {
+          content: "";
+          height: 1px;
+          position: absolute;
+          top: 50%;
+          width: .5rem;
+          background: #e80306;
+        }
+        &::before {
+          left: -.5rem;
+        }
+        &::after {
+          right: -.5rem;
+        }
+      }
+    }
+    .opus-list {
+      overflow-x: hidden;
+      .opus-item {
+        .size(7.5rem / 2, 6.6rem);
+        box-sizing: border-box;
+        position: relative;
+        border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent;
+
+        video {
+          object-fit: fill;
+        }
+        .cover {
+          .size(100%, 100%);
+        }
+
+        &:nth-child(2n+1) {
+          border-right: 1px solid transparent;
+        }
+        &:nth-child(2n) {
+          border-left: 1px solid transparent;
+        }
+
+        .opus-desp {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: .2rem;
+          padding-bottom: 0;
+          box-sizing: border-box;
+          .opus-desp-title {
+            color: #fff;
+            font-size: .3rem;
+            margin-bottom: .1rem;
+            line-height: .4rem;
+          }
+          .opus-desp-plays {
+            font-size: .24rem;
+            color: #fefefe;
+            margin-bottom: .2rem;
+            .icon {
+              display: inline-block;
+              .size(.18rem, .18rem);
+              .bg("../img/icon_home_video_p.png");
+            }
+          }
+          .thumbs {
+            font-size: .24rem;
+            color: #fefefe;
+          }
+        }
+        .close-video {
+          position: absolute;
+          top: .3rem;
+          right: .3rem;
+          color: #fff;
+        }
+
+        // 要全屏播放时加的类
+        // &.full-screen {
+        //   position: fixed;
+        //   top: 0;
+        //   left: 0;
+        //   .size(100%, 100%);
+        //   z-index: 999;
+        //   border: none !important;
+        // }
+      }
+    }
+  }
+
+  // 分享
+  .share-btns {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-bottom: .3rem;
+    z-index: 777;
+    .btn {
+      color: #fefefe;
+      font-size: .3rem;
+      .size(2.3rem, .69rem);
+      border-radius: .35rem;
+      &.share {
+        .bg("../img/icon_home_orange.png");
+        margin-left: .7rem;
+        margin-right: 1.5rem;
+      }
+      &.register {
+        .bg("../img/icon_home_red.png");
+      }
+    }
+  }
+}
+
+// 活动介绍
+.introduce {
+  .dialog-content {
+    padding: .4rem;
+    h1 {
+      padding-top: .4rem;
+      color: #333;
+      font-size: .3rem;
+      padding-bottom: .18rem;
+      line-height: .38rem;
+    }
+    p {
+      font-size: .24rem;
+      color: #999;
+      text-indent: 2em;
+      line-height: 1.7;
+      margin: .24rem auto; 
+    }
+    img {
+      max-width: 100%;
+      margin: .14rem auto;
+      display: block; 
+    }
+  }
+}
+.doc-article {
+  .dialog-mask {
+    bottom: .5rem;
+  }
+  img {
+    max-width: 100%;
+    margin: .14rem auto;
+    display: block;
+  }
+  section {
+    padding: .2rem;
+    padding-top: 0;
+    overflow: auto;
+  }
+  p {
+    text-indent: 2em;
+    font-size: .24rem;
+    line-height: 1.7;
+    margin: .24rem auto;
+  }
+  h4,
+  h1 {
+    color: #333;
+    font-size: .28rem;
+    margin: .14rem 0;
+    font-weight: 700;
+  }
+  strong {
+    text-decoration: underline;
+  }
+}
+
+// 排行榜
+.mvp {
+  .dialog-content {
+    padding: 0 .23rem 2.08rem;
+  }
+  // .dialog-mask {
+  //   bottom: 2rem;
+  // }
+  .nav {
+    margin-top: .5rem;
+    margin-left: 1.2rem;
+
+    li {
+      .size(2rem, .66rem);
+      color: #e80306;
+      font-size: .36rem;
+      line-height: .66rem;
+      &:nth-child(2n+1) {
+        .bg("../img/table_line_left.png");
+        &.active {
+          .bg("../img/table_red_left.png");
+        }
+      }
+      &:nth-child(2n) {
+        .bg("../img/table_line_right.png");
+        &.active {
+          .bg("../img/table_red_right.png");
+        }
+      }
+      &.active {
+        color: #fefefe;
+      }
+    }
+  }
+  
+  .ranking {
+    margin-top: .36rem;
+    color: #333;
+    // max-height: 7.78rem;
+    overflow: scroll;
+    .thead {
+      font-size: .3rem;
+      .tr {
+        line-height: .58rem;
+        border-bottom: 0.01rem solid #b1b1b1;
+        box-sizing: border-box;
+      }
+      p {
+        display: inline-block;
+      }
+    }
+    .tbody {
+      table { width: 100%; }
+      tr {
+        line-height: .9rem;
+        border-bottom: .01rem solid #b1b1b1;
+        box-sizing: border-box;
+        img {
+          .size(.6rem, .6rem);
+        }
+        td:nth-child(3) {
+          line-height: .5rem;
+        }
+      }
+    }
+    td,
+    p {
+      text-align: center;
+      &:nth-child(1) {
+        width: 15%;
+      }
+      &:nth-child(2) {
+        width: 15%;
+      }
+      &:nth-child(3) {
+        width: 46%;
+        span {
+          .pl(8em);
+          display: inline-block;
+        }
+      }
+      &:nth-child(4) {
+        width: 20%;
+      }
+    }
+  }
+  .foot {
+    height: 2.08rem;
+    // position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    .my-score {
+      padding: .3rem 0 .14rem;
+      font-size: .3rem;
+      color: #333;
+    }
+    .tips {
+      color: #b1b1b1;
+      font-size: .24rem;
+    }
+  }
+}
+
+// 亲友贡献榜
+.friends {
+  .dialog-content {
+    padding: 0 .23rem 2.08rem;
+  }
+  .ranking {
+    margin-top: .36rem;
+    color: #333;
+    overflow: scroll;
+    .thead {
+      font-size: .3rem;
+      .tr {
+        line-height: .58rem;
+        border-bottom: 0.01rem solid #b1b1b1;
+        box-sizing: border-box;
+      }
+      p {
+        display: inline-block;
+      }
+    }
+    .tbody {
+      table { width: 100%; }
+      tr {
+        line-height: .7rem;
+        border-bottom: .01rem solid #b1b1b1;
+        box-sizing: border-box;
+      }
+    }
+    td,
+    p {
+      text-align: center;
+      &:nth-child(1) {
+        width: 30%;
+      }
+      &:nth-child(2) {
+        width: 36%;
+        span {
+          .pl(8em);
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      &:nth-child(3) {
+        width: 30%;
+      }
+    }
+  }
+  .foot {
+    .tips {
+      margin-top: .1rem;
+    }
+  }
+}
+
+// 补丁样式
+.modal {
+  height: 0;
+  overflow: hidden;
+}
+.model-open{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%
+}
+@media screen and (min-width: 760px) {
+  .dialog {
+    .size(6.8rem, 9.68rem);
+    margin-top: -4.84rem;
+  }
+  .dialog .dialog-content {
+    max-height: 7.68rem;
+  } 
+  body .opus .opus-list {
+    width: 7.5rem;
+    margin: 0 auto;
+  }
+  body .share-btns {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+
+  }
+  body .share-btns .btn.share {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .btns-box {
+    width: 7.5rem;
+    margin: 0 auto;
+  } 
+}
